@@ -78,6 +78,10 @@
                 {showCategories}
                 </ul>
             </div>
+
+            <div class="ads">
+                <small>Ads</small>
+            </div>
         </div>
 
         <div class="span6" id="mainContent">
@@ -119,6 +123,11 @@
                     <li><a href="{stickyRecordsUrl}">{stickyRecordsTitle}</a></li>
                     [/stickyRecordsList]
                 </ul>
+            </section>
+
+            <section class="ads">
+                <small>Ads</small>
+
             </section>
         </aside>
     </div>
