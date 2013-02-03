@@ -87,7 +87,7 @@
                     <div class="input-append">
                         <input type="hidden" name="searchcategory" value="{categoryId}" />
                         <input type="hidden" name="action" value="search" />
-                        <input type="search" name="search" id="searchfield" size="30" placeholder="{searchBox} ..." class="input-medium search-query" />
+                        <input type="search" name="search" id="searchfield" placeholder="{searchBox} ..." class="input-medium search-query" />
                         <button type="submit" class="btn btn-primary">{searchBox}</button>
                     </div>
                 </form>

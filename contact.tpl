@@ -10,19 +10,17 @@
             
                 <p>
                     <label for="name">{msgNewContentName}</label>
-                    <input type="text" name="name" id="name" value="{defaultContentName}" size="40"
-                           required="required" autofocus="autofocus" />
+                    <input type="text" name="name" id="name" value="{defaultContentName}" required autofocus>
                 </p>
 
                 <p>
                     <label for="email">{msgNewContentMail}</label>
-                    <input type="email" name="email" id="email" value="{defaultContentMail}" size="40"
-                           required="required" />
+                    <input type="email" name="email" id="email" value="{defaultContentMail}" required>
                 </p>
 
                 <p>
                     <label for="question">{msgMessage}</label>
-                    <textarea cols="37" rows="5" name="question" id="question" required="required" /></textarea>
+                    <textarea cols="37" rows="5" name="question" id="question" required></textarea>
                 </p>
 
                 <p>
