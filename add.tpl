@@ -1,54 +1,67 @@
 <h2>{msgNewContentHeader}</h2>
             
             <p>{msgNewContentAddon}</p>
-            <form id="formValues" action="#" method="post">
+            <form id="formValues" action="#" method="post" class="form-horizontal">
                 <input type="hidden" name="lang" id="lang" value="{lang}" />
-                
-                <p>
-                    <label for="name">{msgNewContentName}</label>
-                    <input type="text" name="name" id="name" value="{defaultContentName}" size="37"
-                           required="required" autofocus="autofocus" />
-                </p>
 
-                <p>
-                <label for="email">{msgNewContentMail}</label>
-                <input type="email" name="email" id="email" value="{defaultContentMail}" size="37"
-                       required="required" />
+                <div class="control-group">
+                    <label class="control-label" for="name">{msgNewContentName}</label>
+                    <div class="controls">
+                        <input type="text" name="name" id="name" value="{defaultContentName}" required>
+                    </div>
+                </div>
 
-                <p>
-                <label for="rubrik">{msgNewContentCategory}</label>
-                <select name="rubrik[]" id="rubrik" multiple="multiple" size="5" required="true" />
-                {printCategoryOptions}
-                </select>
-                </p>
+                <div class="control-group">
+                    <label class="control-label" for="email">{msgNewContentMail}:</label>
+                    <div class="controls">
+                        <input type="email" name="email" id="email" value="{defaultContentMail}" required>
+                    </div>
+                </div>
 
-                <p>
-                <label for="question">{msgNewContentTheme}</label>
-                <textarea cols="37" rows="3" name="question" id="question" required="required" />{printQuestion}</textarea>
-                </p>
+                <div class="control-group">
+                    <label class="control-label" for="rubrik">{msgNewContentCategory}</label>
+                    <div class="controls">
+                        <select name="rubrik[]" id="rubrik" multiple="multiple" size="5" required>
+                        {printCategoryOptions}
+                        </select>
+                    </div>
+                </div>
 
-                <p>
-                <label for="answer">{msgNewContentArticle}</label>
-                <textarea cols="37" rows="10" name="answer" id="answer" required="required" /></textarea>
-                </p>
+                <div class="control-group">
+                    <label class="control-label" for="question">{msgNewContentTheme}</label>
+                    <div class="controls">
+                        <textarea cols="37" rows="3" name="question" id="question" required="required" {readonly}>{printQuestion}</textarea>
+                    </div>
+                </div>
 
-                <p>
-                <label for="keywords">{msgNewContentKeywords}</label>
-                <input type="text" name="keywords" id="keywords" size="37" />
-                </p>
+                <div class="control-group">
+                    <label class="control-label" for="answer">{msgNewContentArticle}</label>
+                    <div class="controls">
+                        <textarea cols="37" rows="10" name="answer" id="answer" required="required"></textarea>
+                    </div>
+                </div>
 
-                <p>
-                <label for="contentlink">{msgNewContentLink}</label>
-                <input type="url" name="contentlink" id="contentlink" size="37" value="http://" />
-                </p>
+                <div class="control-group">
+                    <label class="control-label" for="keywords">{msgNewContentKeywords}</label>
+                    <div class="controls">
+                        <input type="text" name="keywords" id="keywords" />
+                    </div>
+                </div>
 
-                <p>
-                {captchaFieldset}
-                </p>
+                <div class="control-group">
+                    <label class="control-label" for="contentlink">{msgNewContentLink}</label>
+                    <div class="controls">
+                        <input type="url" name="contentlink" id="contentlink" size="37" value="http://" />
+                    </div>
+                </div>
 
-                <p>
-                    <input class="submit" type="submit" id="submitfaq" value="{msgNewContentSubmit}" />
-                </p>
+            {captchaFieldset}
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit" id="submitfaq">
+                    {msgNewContentSubmit}
+                    </button>
+                </div>
             </form>
 
             <div id="loader"></div>
