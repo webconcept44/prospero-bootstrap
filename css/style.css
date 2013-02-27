@@ -83,8 +83,8 @@ div.star-rating-hover a {
     text-decoration: none; color: #000000; }
 #mainContent form input.captcha {
     vertical-align: top; height: 40px; width: 120px; text-valign: middle; font-size: 30px; float: right; }
-#debug_main {
-    margin: auto; width: 720px; background-color: #fff; padding: 150px 10px 10px; }
+#mainContent .highlight {
+    text-decoration: dotted; border:1px dashed #f89406; background-color: #eeeeee; padding:1px; }
 
 /* Footer */
 .footer {
